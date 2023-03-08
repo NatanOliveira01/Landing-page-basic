@@ -1,0 +1,286 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Montserrat', sans-serif;
+}
+
+html,body{
+	height: 100%;
+	background: #f0e1f2;
+}
+
+/*para linpar minas flutuações*/
+.clear{
+	clear: both;
+}
+
+/*meu cabeçalho com logo*/
+header{
+	width: 100%;
+	height: 200px;
+	padding: 0 70px;
+}
+
+
+header img{
+	width: 220px;
+	height: 200px;
+}
+
+.left{
+	margin: 0 50px;
+}
+
+header li{
+	display: inline-block;
+	margin: 6px 80px;
+	float: right;
+}
+
+
+header a{
+	color: #00acb0;
+	font-size: 20px;
+	position: fixed;
+	text-decoration: none;
+}
+
+.desktop{
+	margin-top: -100px;
+	padding: 0 80px;
+}
+
+.mobile{
+	display: none;
+}
+
+.mobile li a{
+	margin-top: -14%;
+}
+
+.mobile img{
+	width: 30px;
+	height: 30px;
+}
+
+.mobile .insta{
+	margin: 0 10px;
+}
+
+.mobile .whats{
+   margin: 0 50px;
+}
+/*fim cabeçalho*/
+
+
+/*inicio do meu article*/
+article{
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #00acb0;
+}
+
+article .back-fundo{
+	width: 500px;
+	height: 400px;
+	display: flex;
+	float: right;
+	background: linear-gradient(40deg,#9dccdc,#76b5c5,#d8d7d3);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+article .img-perfil img{
+	width: 450px;
+	height: 350px;
+	margin: 25px -270px;
+}
+
+article h3{
+	text-align: center;
+}
+
+article h2{
+	text-align: center;
+	margin-top: 30px;
+	letter-spacing: 10px;
+}
+/*fim do article*/
+
+/*inicio da minha secção icon com texto*/
+.texto-img{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.divisao{
+	display: flex;
+}
+
+.item1{
+	width: 120px;
+	height: 120px;
+	margin-top: 60px;
+}
+
+.item2{
+	width: 90%;
+	padding: 80px 50px;
+	font-size: 20px;
+}
+
+.item2{
+	color: #06594e;
+}
+/*final da minha secção icon com texto*/
+
+
+/*inicio footer*/
+
+footer .container{
+	width: 100%;
+	height: 150px;
+	margin-top: 30px;
+	background:linear-gradient(40deg,#9dccdc,#76b5c5,#d8d7d3);
+}
+
+
+footer .container .logo img{
+	width: 180px;
+	height: 120px;
+	margin: 20px 100px;
+	float: left;
+}
+
+footer .direitos{
+	width: 300px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+footer h3{
+	color: #f0e1f2;
+	margin-bottom: 10px;
+}
+
+footer p{
+	color: #f0e1f2;
+}
+
+footer .container .rede-social img{
+	width: 60px;
+	height: 60px;
+	margin: -100px 100px;
+	float: right;
+}
+
+/*fim do footer*/
+
+/*aqui começa meu responsivo*/
+
+
+@media screen and (max-width: 1024px){
+	article .img-perfil img{
+	margin: 25px -200px;
+}
+	
+	footer .container .logo img{
+	margin: 20px 50px;
+}
+
+	footer .container .rede-social img{
+	margin: -100px 50px;
+}
+
+}
+
+@media screen and (max-width: 830px){
+	article .img-perfil img{
+	margin: 25px -60px;
+}
+
+	.left{
+	width: 120px;
+	height: 100px;
+	margin: 40px 0;
+}
+
+}
+
+@media screen and (max-width: 768px){
+	.left{
+	width: 120px;
+	height: 100px;
+	margin: 40px 0;
+}
+
+.desktop{
+	display: none;
+}
+
+.mobile{
+	display: block;
+}
+
+	article .back-fundo{
+	width: 100%;
+
+}
+	article .img-perfil img{
+	margin: 25px 100px;
+}
+
+
+	.divisao{
+	display: block;
+	text-align: center;
+}
+
+	.item2{
+	width: 100%;
+}
+
+	footer .container .logo img{
+	margin: 20px 0;
+}
+
+	footer .container .rede-social img{
+	margin: -100px 5px;
+}
+
+}
+
+@media screen and (max-width: 600px){
+
+	.mobile li a{
+	margin-top: -22%;
+}
+
+article .img-perfil img{
+	width: 100%;
+	margin: 25px 0;
+}
+
+
+footer .direitos{
+	padding: 50px 0;
+	margin: 0 -60px;
+}
+
+footer .container .logo img{
+	width: 100px;
+}
+
+footer h3{
+	font-size: 8px;
+}
+
+	footer p{
+	font-size: 8px;
+}
+
+}
