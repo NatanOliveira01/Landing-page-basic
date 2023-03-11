@@ -209,12 +209,15 @@ footer .container .rede-social img{
 	header{
 	height: 130px;
 }
+	.left{
+	margin-left: -50px;
+}
 
-.desktop{
+	.desktop{
 	display: none;
 }
 
-.mobile{
+	.mobile{
 	display: block;
 }
 
