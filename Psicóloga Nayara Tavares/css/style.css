@@ -141,7 +141,7 @@ article h2{
 
 footer .container{
 	width: 100%;
-	height: 150px;
+	height: 160px;
 	margin-top: 30px;
 	background:linear-gradient(40deg,#9dccdc,#76b5c5,#d8d7d3);
 }
@@ -203,19 +203,11 @@ footer .container .rede-social img{
 	margin: 25px -60px;
 }
 
-	.left{
-	width: 120px;
-	height: 100px;
-	margin: 40px 0;
-}
-
 }
 
 @media screen and (max-width: 768px){
-	.left{
-	width: 120px;
-	height: 100px;
-	margin: 40px 0;
+	header{
+	height: 130px;
 }
 
 .desktop{
